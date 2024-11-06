@@ -175,19 +175,20 @@ body {
 /* Media query para pantallas pequeñas (móviles) */
 @media (max-width: 768px) {
   .sidebar {
-    width: 70%; 
-    left: -70%; 
+    width: 70%; /* Ajusta el ancho de la barra lateral en móviles */
+    left: -70%; /* Ocultar la barra lateral inicialmente en móviles */
   }
 
   .sidebar.hidden {
-    left: 0; 
+    left: 0; /* Mostrar la barra lateral al hacer clic en el botón */
   }
 
   .content {
-    margin-left: 0; 
+    margin-left: 0; /* Eliminar el margen izquierdo en móviles */
+    padding: 20px; /* Ajustar el padding del contenido en móviles */
   }
 
-  .modal-content {
-    width: 95%; 
+  .gallery {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Ajustar el tamaño de las imágenes en la galería */
   }
 }
