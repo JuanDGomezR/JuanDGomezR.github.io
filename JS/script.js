@@ -19,12 +19,12 @@ const imagenesBanner = [
   // Datos de las imágenes de la galería (reemplaza con tus datos)
   const imagenesGaleria = [
     {
-      url: "https://drive.google.com/file/d/1ffq7-E1gwhMvIwCLfwzrP-cJMVGQG1bp/view?usp=sharing",
+      url: "IMG/FOTOS_USB/FOTOS_SEMESTRE/IMG_AC_240925015743945.jpg",
       fecha: "2024-11-07 10:00:00",
       descripcion: "Descripción de la imagen 1"
     },
     {
-      url: "https://drive.google.com/file/d/1ffq7-E1gwhMvIwCLfwzrP-cJMVGQG1bp/view?usp=sharing",
+      url: "IMG/FOTOS_USB/FOTOS_SEMESTRE/IMG_AC_240925015743945.jpg",
       fecha: "2024-11-07 12:00:00",
       descripcion: "Descripción de la imagen 2"
     },
