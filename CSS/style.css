@@ -172,11 +172,12 @@ body {
   color: #555;
 }
 
+
 /* Media query para pantallas pequeñas (móviles) */
 @media (max-width: 768px) {
   .sidebar {
     width: 70%; /* Ajusta el ancho de la barra lateral en móviles */
-    left: -70%; /* Ocultar la barra lateral inicialmente en móviles */
+    left: -70%; /* Ocultar la barra lateral inicialmente en móviles */ /* ¡Esta línea se movió aquí! */
   }
 
   .sidebar.hidden {
@@ -190,5 +191,26 @@ body {
 
   .gallery {
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Ajustar el tamaño de las imágenes en la galería */
+  }
+
+  .menu-btn {
+    display: block; /* Mostrar el botón en móviles */
+    position: fixed; 
+    top: 20px; 
+    left: 20px; 
+    background-color: #333; 
+    color: white; 
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    z-index: 12; 
+    cursor: pointer;
+  }
+}
+
+/* Ocultar el botón en pantallas grandes */
+@media (min-width: 768px) {
+  .menu-btn {
+    display: none; 
   }
 }
