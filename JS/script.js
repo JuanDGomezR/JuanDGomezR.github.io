@@ -1,32 +1,37 @@
 // Imágenes para el banner (reemplaza con tus URLs)
-const imagenesBanner = [
-    "IMG/FOTOS_USB/FOTOS_SEMESTRE/IMG_AC_240925015743945.jpg",
-    "IMG/FOTOS_USB/FOTOS_SEMESTRE/IMG_AC_240925093740429.jpg",
+//const imagenesBanner = [
+    //"IMG/FOTOS_USB/FOTOS_SEMESTRE/IMG_AC_240925015743945.jpg",
+    //"IMG/FOTOS_USB/FOTOS_SEMESTRE/IMG_AC_240925093740429.jpg",
     // Agrega más imágenes si lo deseas
-  ];
+  //];
   
-  const banner = document.getElementById('banner');
-  let indiceBanner = 0;
+ // const banner = document.getElementById('banner');
+  //let indiceBanner = 0;
   
-  function cambiarImagenBanner() {
-    banner.style.backgroundImage = `url(${imagenesBanner[indiceBanner]})`;
-    indiceBanner = (indiceBanner + 1) % imagenesBanner.length;
-  }
+  //function cambiarImagenBanner() {
+  //  banner.style.backgroundImage = `url(${imagenesBanner[indiceBanner]})`;
+  //  indiceBanner = (indiceBanner + 1) % imagenesBanner.length;
+  //}
   
-  cambiarImagenBanner(); // Mostrar la primera imagen al cargar
-  setInterval(cambiarImagenBanner, 5000); // Cambiar la imagen cada 5 segundos
+  //cambiarImagenBanner(); // Mostrar la primera imagen al cargar
+  //setInterval(cambiarImagenBanner, 5000); // Cambiar la imagen cada 5 segundos
   
   // Datos de las imágenes de la galería (reemplaza con tus datos)
   const imagenesGaleria = [
     {
-      url: "IMG/FOTOS_USB/FOTOS_SEMESTRE/IMG_AC_240925015743945.jpg",
-      fecha: "2024-11-07 10:00:00",
-      descripcion: "Descripción de la imagen 1"
+      url: "IMG/FOTOS_USB/FOTOS_SEMESTRE/IMG_20240820_154711.jpg",
+      fecha: "2024-11-06",
+      descripcion: "Él es Mailo, mi perro."
     },
     {
       url: "IMG/FOTOS_USB/FOTOS_SEMESTRE/IMG_AC_240925015743945.jpg",
-      fecha: "2024-11-07 12:00:00",
-      descripcion: "Descripción de la imagen 2"
+      fecha: "2024-11-06",
+      descripcion: "Unas pequeñas plantas. ¿Bonitas, no?"
+    },
+    {
+      url: "IMG/FOTOS_USB/IMG_0607.CR2",
+      fecha: "2024-11-06",
+      descripcion: "La cascada sonido relajante."
     },
     // Agrega más imágenes aquí
   ];
