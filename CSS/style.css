@@ -75,30 +75,13 @@ body {
   padding: 20px;
 }
 
-/* Banner 
-#banner {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 300px;
-  background-size: cover;
-  background-position: center;
-  transition: background-image 1s ease-in-out;
-  position: relative;
-}
-
-#banner img {
-  max-width: 80%;
-  height: auto;
-}
-*/
 /* Galería */
 .gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: 20px;
   padding: 20px;
-  margin-top: 20px; /* Espacio para el banner */
+  margin-top: 20px; /* Espacio superior para la galería */
 }
 
 .gallery-item {
