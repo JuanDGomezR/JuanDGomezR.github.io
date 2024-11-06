@@ -61,11 +61,8 @@ window.onclick = function(event) {
   }
 }
 
-// Agregar un event listener para el botón de menú (opcional)
-const menuBtn = document.createElement('button');
-menuBtn.textContent = "☰"; // Puedes usar un icono en su lugar
-menuBtn.classList.add('menu-btn');
-document.body.insertBefore(menuBtn, document.body.firstChild);
+// Agregar un event listener para el botón de menú 
+const menuBtn = document.querySelector('.menu-btn'); // Seleccionar el botón existente
 
 menuBtn.addEventListener('click', () => {
   const sidebar = document.querySelector('.sidebar');
