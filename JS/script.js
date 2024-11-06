@@ -1,7 +1,7 @@
 // Imágenes para el banner (reemplaza con tus URLs)
 const imagenesBanner = [
-    "URL_IMAGEN_BANNER_1.jpg",
-    "URL_IMAGEN_BANNER_2.jpg",
+    "IMG/FOTOS_USB/FOTOS_SEMESTRE/IMG_AC_240925015743945.jpg",
+    "IMG/FOTOS_USB/FOTOS_SEMESTRE/IMG_AC_240925093740429.jpg",
     // Agrega más imágenes si lo deseas
   ];
   
