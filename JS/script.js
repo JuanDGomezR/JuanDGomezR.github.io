@@ -11,9 +11,9 @@
       descripcion: "Unas pequeñas plantas. ¿Bonitas, no?"
     },
     {
-      url: "IMG/FOTOS_USB/IMG_0607.CR2",
+      url: "IMG/FOTOS_USB/FOTOS_SEMESTRE/Photoroom-20240907_164528.png",
       fecha: "2024-11-06",
-      descripcion: "La cascada sonido relajante."
+      descripcion: "¿Vamos por un café?."
     },
     // Agrega más imágenes aquí
   ];
