@@ -1,147 +1,203 @@
 body {
-    font-family: sans-serif;
-    margin: 0;
-    background-color: #f4f4f4;
-    color: #333;
+  font-family: sans-serif;
+  margin: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Barra lateral */
+.sidebar {
+  background-color: #e0e0e0;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 250px; /* Ajusta el ancho de la barra lateral */
+  z-index: 10;
+  transition: left 0.3s ease; /* Transición para ocultar/mostrar la barra */
+}
+
+.sidebar.hidden {
+  left: -250px; /* Ocultar la barra lateral */
+}
+
+.sidebar-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.logo {
+  /* Agrega aquí el estilo para tu logo */
+  width: 100px;
+  height: 100px;
+  background-color: #ddd; /* Color de fondo de ejemplo */
+  margin: 0 auto 10px;
+}
+
+.nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav li a {
+  display: block;
+  color: #333;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+
+.nav li a:hover {
+  background-color: #ddd;
+}
+
+.social-media {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.social-media a {
+  display: inline-block;
+  margin: 0 5px;
+  color: #333;
+}
+
+.copyright {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 12px;
+}
+
+/* Contenido principal */
+.content {
+  margin-left: 250px; /* Ajustar el margen izquierdo para el contenido */
+  padding: 20px;
+}
+
+/* Banner 
+#banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 300px;
+  background-size: cover;
+  background-position: center;
+  transition: background-image 1s ease-in-out;
+  position: relative;
+}
+
+#banner img {
+  max-width: 80%;
+  height: auto;
+}
+*/
+/* Galería */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 20px;
+  padding: 20px;
+  margin-top: 20px; /* Espacio para el banner */
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.1);
+}
+
+.ver-mas {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 8px 16px;
+  border-radius: 4px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  cursor: pointer;
+}
+
+.gallery-item:hover .ver-mas {
+  opacity: 1;
+}
+
+/* Modal para la imagen completa */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 800px;
+  position: relative;
+}
+
+.modal-content img {
+  width: 100%;
+  height: auto;
+}
+
+.close {
+  color: #aaa;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-descripcion {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #555;
+}
+
+
+/* Media query para pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 70%; /* Ajusta el ancho de la barra lateral en móviles */
+    left: -70%; /* Ocultar la barra lateral inicialmente en móviles */
   }
-  
-  /* Barra de navegación */
-  .navbar {
-    background-color: #e0e0e0;
-    padding: 10px 20px;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 10;
+
+  .sidebar.hidden {
+    left: 0; /* Mostrar la barra lateral al hacer clic en el botón */
   }
-  
-  .navbar a {
-    color: #333;
-    text-decoration: none;
-    padding: 8px 16px;
-    border-radius: 4px;
+
+  .content {
+    margin-left: 0; /* Eliminar el margen izquierdo en móviles */
   }
-  
-  .navbar a:hover {
-    background-color: #ddd;
-  }
-  
-  /* Banner */
-  #banner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 300px;
-    background-size: cover;
-    background-position: center;
-    transition: background-image 1s ease-in-out;
-    position: relative;
-  }
-  
-  #banner img {
-    max-width: 80%;
-    height: auto;
-  }
-  
-  /* Galería */
-  .gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 20px;
-    padding: 20px;
-    margin-top: 350px;
-  }
-  
-  .gallery-item {
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .gallery-item img {
-    width: 100%;
-    height: auto;
-    transition: transform 0.3s ease;
-  }
-  
-  .gallery-item:hover img {
-    transform: scale(1.1);
-  }
-  
-  .ver-mas {
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: rgba(0, 0, 0, 0.7);
-    color: white;
-    padding: 8px 16px;
-    border-radius: 4px;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    cursor: pointer;
-  }
-  
-  .gallery-item:hover .ver-mas {
-    opacity: 1;
-  }
-  
-  /* Modal para la imagen completa */
-  .modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.7);
-  }
-  
-  .modal-content {
-    background-color: #fefefe;
-    margin: 10% auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-    max-width: 800px;
-    position: relative;
-  }
-  
-  .modal-content img {
-    width: 100%;
-    height: auto;
-  }
-  
-  .close {
-    color: #aaa;
-    position: absolute;
-    top: 10px;
-    right: 20px;
-    font-size: 28px;
-    font-weight: bold;
-    cursor: pointer;
-  }
-  
-  .close:hover,
-  .close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-  }
-  
-  .modal-descripcion {
-    margin-top: 10px;
-    font-size: 14px;
-    color: #555;
-  }
-  
-  /* Sección de contacto */
-  #contacto {
-    padding: 20px;
-    margin-top: 50px;
-    text-align: center;
-  }
+}

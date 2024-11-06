@@ -73,3 +73,8 @@ const imagenesBanner = [
       modal.style.display = "none";
     }
   }
+
+  // Agregar un event listener para el botón de menú (opcional)
+//const menuBtn = document.createElement('button'); 
+//menuBtn.textContent = "☰"; // Puedes usar un icono en su lugar
+//menuBtn.classList.
