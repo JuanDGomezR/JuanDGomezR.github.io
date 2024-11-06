@@ -19,12 +19,12 @@ const imagenesBanner = [
   // Datos de las imágenes de la galería (reemplaza con tus datos)
   const imagenesGaleria = [
     {
-      url: "URL_IMAGEN_GALERIA_1.jpg",
+      url: "https://drive.google.com/file/d/1ffq7-E1gwhMvIwCLfwzrP-cJMVGQG1bp/view?usp=sharing",
       fecha: "2024-11-07 10:00:00",
       descripcion: "Descripción de la imagen 1"
     },
     {
-      url: "URL_IMAGEN_GALERIA_2.jpg",
+      url: "https://drive.google.com/file/d/1ffq7-E1gwhMvIwCLfwzrP-cJMVGQG1bp/view?usp=sharing",
       fecha: "2024-11-07 12:00:00",
       descripcion: "Descripción de la imagen 2"
     },
