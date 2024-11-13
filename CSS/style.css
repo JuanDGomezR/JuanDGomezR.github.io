@@ -9,7 +9,7 @@ body {
 .navbar {
   background-color: #333; /* Azul oscuro */
   padding: 10px 20px;
-  position: fixed;
+  position: fixed; /* La barra se queda fija en la parte superior */
   top: 0;
   left: 0;
   width: 100%;
@@ -138,6 +138,12 @@ body {
   margin-right: 20px;
 }
 
+/* Contenido principal */
+.content {
+  padding-top: 80px; /* Espacio para la barra de navegación */
+  margin-left: 0; /* Eliminar el margen izquierdo */ 
+}
+
 /* Media query para pantallas pequeñas (móviles) */
 @media (max-width: 768px) {
   .navbar {
@@ -160,5 +166,24 @@ body {
 
   .carrusel img {
     height: auto; /* Ajustar la altura de las imágenes en móviles */
+  }
+
+  .sidebar {
+    width: 70%; /* Ajusta el ancho de la barra lateral en móviles */
+    left: -70%; /* Ocultar la barra lateral inicialmente en móviles */
+  }
+
+  .sidebar.hidden {
+    left: 0; /* Mostrar la barra lateral al hacer clic en el botón */
+  }
+
+  .content {
+    margin-left: 0; /* Eliminar el margen izquierdo en móviles */
+    padding: 20px; /* Ajustar el padding del contenido en móviles */
+    padding-top: 100px; /* Ajustar el espacio para la barra en móviles */
+  }
+
+  .gallery {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Ajustar el tamaño de las imágenes en la galería */
   }
 }
